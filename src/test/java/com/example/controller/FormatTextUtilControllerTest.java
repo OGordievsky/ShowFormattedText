@@ -26,7 +26,7 @@ public class FormatTextUtilControllerTest {
         String shStr2 = "123456789012345678901";
         String shStr3 = "1234567890123456789";
 
-        FormatTextController formatController = new FormatTextController(Paths.get("media/Text.txt"), FONT_NAME , RESOLUTION , MAX_SYMBOLS, SOME_WORDS_COUNT);
+//        FormatTextController formatController = new FormatTextController(Paths.get("media/Text.txt"), FONT_NAME , RESOLUTION , MAX_SYMBOLS, SOME_WORDS_COUNT);
 
 //        List<String> result1 = formatController.cutString(longtext);
 //        System.out.println(result1);
