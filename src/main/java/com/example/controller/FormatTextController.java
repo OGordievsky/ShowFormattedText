@@ -35,12 +35,13 @@ public class FormatTextController {
     {
         try {
             Properties properties = ReadPropertiesUtil.getProperties(PROPERTIES, ERROR_MESSAGE);
+            ReadUserConsoleUtil consoleUtil = new ReadUserConsoleUtil();
             fontName = properties.getProperty("fontName");
             resolution[0] = Integer.parseInt(properties.getProperty("windowWidth"));
             resolution[1] = Integer.parseInt(properties.getProperty("windowHeight"));
             maxSymbols = Integer.parseInt(properties.getProperty("maxSymbols"));
             someWordsCount = Integer.parseInt(properties.getProperty("someWordsCount"));
-            Path findFile = ReadUserConsoleUtil.getFileUrl(DEFAULT_FOLDER);
+            Path findFile = consoleUtil.getFileUrl(DEFAULT_FOLDER);
             if (findFile!= null){
                 fileUrl = findFile;
             } else {
@@ -89,5 +90,13 @@ public class FormatTextController {
                 }
             }
         });
+    }
+
+    public GetFileData getFileModel() {
+        return fileModel;
+    }
+
+    public FormatTextFrame getFrame() {
+        return frame;
     }
 }

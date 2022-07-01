@@ -23,7 +23,6 @@ public class FormatTextUtil {
         if (line.length() > maxSymbols) {
             String cutStr = line.substring(0, maxSymbols + 1);
             int indexEndStr = cutStr.indexOf('\n') > 0 ? cutStr.indexOf('\n') : cutStr.lastIndexOf(' ');
-//            int indexEndStr = cutStr.lastIndexOf(' ');
             if (indexEndStr > 0) {
                 result.add(line.substring(0, indexEndStr));
                 indexEndStr++;

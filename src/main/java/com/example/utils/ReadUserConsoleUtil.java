@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 public class ReadUserConsoleUtil {
     private static BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-    public static Path getFileUrl(String defaultFileUrl) throws IOException {
+    public Path getFileUrl(String defaultFileUrl) throws IOException {
         System.out.println("Please enter absolute (full) path to read file:");
         Path inputString = Paths.get(bufferedReader.readLine());
         if (inputString.isAbsolute()) {
@@ -31,7 +31,7 @@ public class ReadUserConsoleUtil {
         return null;
     }
 
-    private static Path findFile(Path inputUrl) throws IOException {
+    private Path findFile(Path inputUrl) throws IOException {
         if (Files.isRegularFile(inputUrl)) {
             return inputUrl;
         } else if (Files.isDirectory(inputUrl)) {
