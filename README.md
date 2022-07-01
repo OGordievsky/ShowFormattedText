@@ -16,6 +16,7 @@ Steps for start from IntelliJIDEA or another Java IDE
 4. open you favorite IDE
 5. in yours IDE: File -> Open -> c:\projects\ShowFormattedText
 6. find main class "ShowFTextApp" into \ShowFormattedText\src\main\com\example\ShowFTextApp.java
+
 7. right click on ShowFTextApp.java select [Run] (green "Play" triangle)
 
 enjoy to use
