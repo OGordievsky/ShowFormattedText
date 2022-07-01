@@ -19,3 +19,8 @@ Steps for start from IntelliJIDEA or another Java IDE
 7. right click on ShowFTextApp.java select [Run] (green "Play" triangle)
 
 enjoy to use
+
+Simple way to start from OS
+copy on you computer directory all files from:
+https://github.com/OGordievsky/ShowFormattedText/tree/master/compiled
+double-click on Start.bat
