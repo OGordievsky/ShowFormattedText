@@ -1,4 +1,4 @@
-# ShowFormattedText Application
+# ShowFormatText Application
 How to start this programm?
    
 Next steps for start from console:
