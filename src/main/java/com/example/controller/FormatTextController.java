@@ -62,7 +62,8 @@ public class FormatTextController {
     }
 
     public void init() {
-        frame.setContent(FormatTextUtil.cutTextLines(fileModel.getTextLines(), maxSymbols));
+//        frame.setContent(FormatTextUtil.cutTextLines(fileModel.getTextLines(), maxSymbols));
+        frame.setContent(FormatTextUtil.formatLines(fileModel.getTextLines(), maxSymbols));
         initFrameListeners();
     }
 

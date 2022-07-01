@@ -35,16 +35,32 @@ public class FormatTextPanel extends AbstractScrollPanel implements TextContent 
         int countWords = 1;
         for (int i = 0; i < textContent.size(); i++) {
             int xPos = 0;
+            /*
+            //like how it works, but not correct for task
             String[] words = textContent.get(i).split("\\b");
             for (String word : words) {
                 String anyWord = "[a-zA-Zа-яА-Я]+";
                 if (word.matches(anyWord)) {
                     countWords++;
                 }
-                Font font = fonts[(countWords / someWords) % 2];
+                Font font = fonts[(countWords / someWords) % fonts.length];
                 g.setFont(font);
                 g.drawString(word, xPos, fontHeight * (i + scrollPos));
                 xPos += getFontMetrics(font).stringWidth(word);
+            }
+             */
+            String line = textContent.get(i);
+            StringBuilder word = new StringBuilder();
+            for (char ch : line.toCharArray()) {
+                word.append(ch);
+                if (ch == ' ' || ch == '\n') {
+                    countWords++;
+                    Font font = fonts[(countWords / someWords) % fonts.length];
+                    g.setFont(font);
+                    g.drawString(word.toString(), xPos, fontHeight * (i + scrollPos));
+                    xPos += getFontMetrics(font).stringWidth(word.toString());
+                    word.setLength(0);
+                }
             }
         }
     }
