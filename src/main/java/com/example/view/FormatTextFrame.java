@@ -24,4 +24,8 @@ public class FormatTextFrame extends Frame {
         this.panel.revalidate();
         this.panel.repaint();
     }
+
+    public FormatTextPanel getPanel() {
+        return panel;
+    }
 }

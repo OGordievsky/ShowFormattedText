@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.ListIterator;
 import java.util.stream.Collectors;
 
-public class ReadUserConsoleUtil {
+public class FindFileConsoleUtil {
     private static BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
     public Path getFileUrl(String defaultFileUrl) throws IOException {

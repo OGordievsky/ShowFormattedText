@@ -20,5 +20,4 @@ public class TextFileModelTest {
         String[] emptyList = new String[2];
         Assert.assertArrayEquals(TestsData.listFromFile, textFileModel.getTextLines().toArray());
     }
-
 }
