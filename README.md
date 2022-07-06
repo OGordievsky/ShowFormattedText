@@ -36,8 +36,8 @@
 <br/>6. Right click on ShowFTextApp.java select [Run] (green "Play" triangle)
 <br/>
 <br/>Simple way to start from OS
-<br/>1. Click  <a href="https://github.com/OGordievsky/ShowFormattedText/raw/master/compilled/Application.rar">"Download"</a> after that the start upload archive from:
-<br/>https://github.com/OGordievsky/CoffeeVending/blob/master/compiled/Application.rar
+<br/>1. Click  <a href="https://github.com/OGordievsky/ShowFormattedText/raw/master/compiled/Application.rar">"Download"</a> after that the start upload archive from:
+<br/>https://github.com/OGordievsky/ShowFormattedText/tree/master/compiled
 <br/>2. Unpack Application.rar into your directory.
 <br/>3. Double-click on Start.bat
 <br/>
